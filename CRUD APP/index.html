@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- navbar section  -->
+        <div class="navbar bg-purple-950 w-full h-12 flex items-center justify-between px-12">
+            <header>
+                <h1 class="font-semibold text-xl text-white cursor-pointer" >Crud App</h1>
+            </header>
+            <ul class="flex gap-5 text-white font-semibold" >
+                <li class="cursor-pointer" >Home</li>
+                <li class="cursor-pointer" >Contact</li>
+            </ul>
+        </div>
+
+        <!-- task section  -->
+        <div class="px-12 py-8 w-fit mx-auto" >
+
+            <!-- task input  -->
+            <form id="form" class="mb-6">
+                <label>Add task</label><br>
+                <input id="taskInput" class="border-b border-zinc-400 w-60 px-2 py-1 outline-none bg-transparent" type="text" placeholder="Let us know your task">
+                <button id="addTaskBtn" class="bg-purple-600 px-6 py-1 text-white rounded-lg" type="submit">Add</button>
+            </form>
+
+            <!-- task list  -->
+            <div class="task-list">
+                <!-- task gonna add up here  -->
+             </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

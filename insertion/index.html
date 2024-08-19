@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heading{
+        color: crimson;
+    }
+</style>
+<body>
+    <p>This is element insertion in dom</p>
+    <button class="addElement">Click here</button>
+    <div class="container">
+        <h3>Your task list</h3>
+    </div>
+    <script>
+
+        const container = document.querySelector('.container');
+        const addElement = document.querySelector('.addElement');
+
+        addElement.addEventListener('click' , ()=>{ 
+            const box = document.createElement('div');
+            box.innerHTML = `<p class="para">This is the task</p>`;
+            container.append(box)
+        })
+    </script>
+</body>
+</html>
